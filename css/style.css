@@ -42,11 +42,16 @@
 }
 
 
+/* Imagem Logo Principal */
 
-#nav1 img{
-    width: 180px;
+#nav1 #img-logo{
+    width: 220px;
     height: auto;
 }
+
+
+
+/* Imagens de Redes Sociais lado Direito */
 
 #navbar-direito img{
   width: 25px;
@@ -152,10 +157,6 @@
 }
 
 
-
-
-
-
 /* Navbar Numero 2 | Segundo Navbar */
 
 #nav2 {
@@ -181,7 +182,7 @@ a h5{
 
 
 
-/* Logo e Box Contido dentro da Logo */
+/* Wallpaper + Box Flutuante contido no Wallpaper*/
 
 .box-logo {
   position: absolute;
@@ -244,10 +245,17 @@ a h5{
 
 
 
+/* Conteudo Principal do Site | Body do Site */
 
-
-
-
+/* Quantidade de Cards posicionados */
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
+}
 
 
 

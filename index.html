@@ -13,11 +13,13 @@
   </head>
   <body>
 
+    <!-- Primeiro NavBar do Site + logo Principal -->
+
     <nav id="nav1" class="navbar fixed-top navbar-expand-md navbar-light bg-white">
 
       <div class="container">
       <a class="navbar-brand">
-        <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/logo.PNG" alt="">
+        <img id="img-logo" src="imgs/logoOficial.png" alt="" onMouseOver="mouseEmCima(this)" onMouseOut="mouseFora(this)" >
       </a>
 
       <div id="navbar-direito">
@@ -47,14 +49,15 @@
           <a class="nav-link" href="#"><img src="imgs/usuario.png" alt="" title="Login"></a>         
         </li>
         </div>
-        
       </ul>
       </div>
       </div>
-      
+  
     </nav>
 
+    <!-- Fim do Primeiro NavBar do Site + logo Principal -->
 
+    <!-- Segundo NavBar do Site -->
 
     <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -88,16 +91,19 @@
     </nav>
 
 
-    <!-- Fim do NavBar -->
+    <!-- Fim do Segundo NavBar do Site -->
 
+    <!-- WallPapeer do Site + Box Flutuante -->
 
-      <div class="logo">
-      <img id="image-logo" src="imgs/logo.png" class="img-fluid w-100" alt="...">
+  <div class="logo">
+
+    <img src="imgs/wallpaper.png" class="img-fluid w-100" alt="...">
+        
       <div class="box-logo">
       <h1>Olá, Seja Bem Vindo(a)!</h1>
       <hr>
       <p class="text-logo-01">
-        “Lembre-se que as pessoas podem tirar tudo de você, menos o seu conhecimento!.” - <span class="font-italic"> Albert Einstein </span>
+        “Somos o resultado dos livros que lemos, das viagens que fazemos e das pessoas que amamos.” - <span class="font-italic"> Airton Ortiz </span>
       </p>
 
       <p class="font-weight-normal text-logo-02" >
@@ -109,49 +115,122 @@
       <button type="button" class="btn btn-dark">Documentação</button>
       </p>
 
-      
-
-      <!-- <a href="https://www.padrim.com.br/" target="_blank" class="text-primary text-logo-03"><input type="button" value="Click Aqui" name="link" placeholder="Click Aqui"> </a>
-      <a href="https://www.padrim.com.br/" target="_blank" class="text-primary text-logo-03"><input type="button" value="Click Aqui" name="link" placeholder="Click Aqui"> </a>
-
-       -->
-
       </div>
-    </div>
+  </div>
 
-
-
-
-    <!-- <br><br><br><br><br>
-    <img id="loading" src="imgs/zoom-logo.png"> -->
+    <!-- Fim do WallPapeer do Site + Box Flutuante -->
       
-    
-    
-    
-  
-    <!-- <div class="card bg-dark text-white">
-      <img src="imgs/001.png" class="card-img w-100" alt="...">
-      <div class="card-img-overlay">
 
-        <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-          <div class="card-body">
-            <h1 class="cursor">Cursos de UX/UI Design e Front End na Origamid</h1>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-
-    </div>
-    </div> -->
-
-
-    
+    <!-- Conteudo Principal do Site | Body do Site -->
 
     <div class="container">
     <div id="conteudo-body">
 
     <hr>
 
-    <p class="display 5">Hello, world!</p>
+    <h2 class="display 5">Hello, world!</h2>
+
+
+    <div class="card-columns">
+
+        <div class="card mb-3" style="max-width: 400px;">
+        <div class="row no-gutters">
+          <div class="col-md-5">
+            <img src="https://sabrinaandrade.files.wordpress.com/2015/04/cronicas_narnia.jpg?w=584" class="card-img" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h6 class="card-title">Crônicas de Narnia</h6>
+              <p class="card-text">Autor: Clive Staples Lewis</p>
+              <p class="card-text"><small class="text-muted">Gênero: Fantasia, Aventura</small></p>
+              <p class="card-text"><small class="text-muted">Data de Publicação: 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm"> Download</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 400px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 400px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 400px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 400px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 400px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+
+
+
+    </div>
+
 
 
 
@@ -187,6 +266,30 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+      // Mudar Logo principal do Site por Gif 
+
+      function mouseEmCima(imagem) {
+   
+        imagem.style.width = "220px";
+        imagem.style.height = "auto";
+        imagem.style.cursor = "pointer";
+        imagem.src="imgs/logoGif.gif";
+
+      }
+   
+      function mouseFora(imagem) {
+
+        imagem.style.width = "220px";
+        imagem.style.height = "auto";
+        imagem.style.cursor = "pointer";
+        imagem.src="imgs/logoOficial.png";
+        
+        }
+
+    </script>
 
     <script>
   
