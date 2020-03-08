@@ -1,0 +1,269 @@
+
+  h1 {
+    max-width: 800px;
+    text-align: left;
+    margin: 5px auto;
+    color: red;
+  }
+
+  h1::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+
+
+
+
+
+#nav1{
+    border-bottom: 2px solid rgb(220,220,220,0.5);
+    animation: linha 8s infinite;
+}
+
+@keyframes linha {
+  from {border-bottom: 2px solid rgb(220,220,220,0.5);}
+  to {border-bottom: 2px solid rgb(255,99,71,0.5);}
+}
+
+
+
+#nav1 img{
+    width: 180px;
+    height: auto;
+}
+
+#navbar-direito img{
+  width: 25px;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+  margin: 0%;
+}
+
+#navbar-direito img:hover{
+  cursor: pointer;
+}
+
+
+/* Linhas dos Icones do Primeiro Navbar Direito  */
+
+#navbar-direito .github{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid white;
+  padding-bottom: 7px;
+}
+
+#navbar-direito .github:hover{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid black;
+  border-right: 1px solid white;
+  opacity: 0.6;
+  padding-bottom: 7px;
+}
+
+#navbar-direito .facebook{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid white;
+  padding-bottom: 7px;
+}
+
+#navbar-direito .facebook:hover{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid #4682B4		;
+  border-right: 1px solid white;
+  opacity: 0.6;
+  padding-bottom: 7px;
+}
+
+
+#navbar-direito .twitter{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid white;
+  padding-bottom: 7px;
+}
+
+#navbar-direito .twitter:hover{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid #00BFFF	;
+  border-right: 1px solid white;
+  opacity: 0.6;
+  padding-bottom: 7px;
+}
+
+
+#navbar-direito .instagram{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid white;
+  padding-bottom: 7px;
+}
+
+#navbar-direito .instagram:hover{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid #A020F0	;
+  border-right: 1px solid white;
+  opacity: 0.6;
+  padding-bottom: 7px;
+}
+
+
+#navbar-direito .login{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid white;
+  border-right: 1px solid white;
+  padding-bottom: 7px;
+}
+
+#navbar-direito .login:hover{
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 3px solid orange;
+  border-right: 1px solid white;
+  opacity: 0.6;
+  padding-bottom: 7px;
+}
+
+
+
+
+
+
+/* Navbar Numero 2 | Segundo Navbar */
+
+#nav2 {
+    display: block;
+    top: 72px;
+    margin-bottom: 72px;
+    z-index: 100;
+}
+
+#nav2 .pesquisa-icone{
+  width: 20px;
+  height: auto;
+}
+
+a h5{
+    font-size: 13pt;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase !important;
+    color: rgb(10,10,10,0.6);
+}
+
+
+
+
+/* Logo e Box Contido dentro da Logo */
+
+.box-logo {
+  position: absolute;
+  width: 520px;
+  height: 350px;
+  top: 180px;
+  left: 100px;
+  background-color: rgb(255,99,71);
+  border-radius: 10px;
+  padding: 25px;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-delay: -2s;
+}
+
+@keyframes example {
+  25%  { top:300px;}
+  100% { top:180px;}
+}
+
+.logo h1{
+  color:white;
+  text-align: center;
+  top: 50px;
+  width: auto;
+  line-height: 30px;
+  height: 40px;
+  left: 40px;
+  font-size: 30pt;
+  
+}
+
+.logo .text-logo-01{
+  color:white;
+  text-align: center;
+  width: auto;
+  line-height: 30px;
+  height: 40px;
+  left: 100px;
+  font-size: 20pt;
+  
+}
+
+.logo .text-logo-02{
+  color:white;
+  text-align: center;
+  padding-top: 60px;
+  width: auto;
+  line-height: 30px;
+  height: 40px;
+  left: 100px;
+  font-size: 13pt;
+  padding-bottom: 30px;
+}
+
+.logo .text-logo-03{
+  text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Efeito Rotation Imagens  */
+
+
+#loading {
+  -webkit-animation: rotation 5s infinite linear;
+  
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
