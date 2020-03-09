@@ -139,7 +139,7 @@
 }
 
 
-#navbar-direito .login{
+#navbar-direito .sugestao{
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-bottom: 3px solid white;
@@ -147,7 +147,7 @@
   padding-bottom: 7px;
 }
 
-#navbar-direito .login:hover{
+#navbar-direito .sugestao:hover{
   border-top: 1px solid white;
   border-left: 1px solid white;
   border-bottom: 3px solid orange;
@@ -155,6 +155,8 @@
   opacity: 0.6;
   padding-bottom: 7px;
 }
+
+
 
 
 /* Navbar Numero 2 | Segundo Navbar */
@@ -178,6 +180,18 @@ a h5{
     text-transform: uppercase !important;
     color: rgb(10,10,10,0.6);
 }
+
+a h5:hover{
+  font-size: 13pt;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase !important;
+  color: rgb(10,10,10);
+  cursor: pointer;
+
+}
+
+
 
 
 
@@ -247,15 +261,56 @@ a h5{
 
 /* Conteudo Principal do Site | Body do Site */
 
+.titulo-principal-home{
+  margin: 30px 0px;
+  
+}
+
 /* Quantidade de Cards posicionados */
 .card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 3;
-  }
   @include media-breakpoint-only(xl) {
     column-count: 3;
+    columns: 3;
   }
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+    columns: 3;
+  }
+  
 }
+
+#conteudo-body .paragrafo-titulo{
+  padding: 0%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#conteudo-body .paragrafo-autor{
+  padding: 0%;
+  margin: 2px 0px;
+  font-size: 12pt;
+}
+
+#conteudo-body .paragrafo-genero{
+  padding: 0%;
+  margin: 0%;
+  font-size: 12pt;
+  color: #5c6ac7;
+}
+
+#conteudo-body .paragrafo-data{
+  padding: 0%;
+  margin: 0%;
+  font-size:
+  12pt;
+}
+
+#conteudo-body .button-card{
+  text-align: center;
+  margin-top: 8px;
+}
+
+
 
 
 

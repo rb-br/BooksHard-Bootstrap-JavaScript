@@ -44,25 +44,73 @@
           <a class="nav-link" href="#"><img src="imgs/instagram.png" alt="" title="Instagram"></a>
         </li>
         </div>
-        <div class="login">
+        <div class="sugestao" data-toggle="modal" data-target=".bd-example-modal-xl">
         <li class="nav-item">
-          <a class="nav-link" href="#"><img src="imgs/usuario.png" alt="" title="Login"></a>         
+          <a class="nav-link" href="#"><img src="imgs/sugestao.png" alt="" title="Sugestao | Suporte" ></a>
         </li>
         </div>
       </ul>
       </div>
       </div>
-  
     </nav>
 
-    <!-- Fim do Primeiro NavBar do Site + logo Principal -->
+    <!-- Modal do Navbar Direito | Botao Sugestão -->    
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+       
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <img src="imgs/imagem-model-livro.png" class="card-img" alt="...">
+      </div>
+      <div class="col-md-6">
+      <div class="card-body">
+        <h3 class="card-title">Não Encontrou o que Procura ? 
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </h3>
+        <p class="card-text">Nós ajude a tornar a Books Hard ainda melhor, Indique ou der sugestões de Livros que ainda não existem em nosso acervo.</p>
+
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label"> <h6>Nome do Livro :</h6> </label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Insira o Nome do Livro...">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label"> <h6>Descrição do Livro | Autor | Gênero :</h6></label>
+            <textarea class="form-control" id="message-text" placeholder="Descreva aqui informações sobre o(s) Livro(s) que você está sugerindo... " style="height: 130px;"></textarea>
+          </div>
+
+          <div class="text-right justify-content-end" style="margin-top: 30px;">
+            <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary ">Enviar Mensagem </button>
+          </div>
+        </form>
+
+      </div>
+    
+     </div>
+    </div>
+
+      
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Fim do Primeiro NavBar do Site + logo Principal + Modal Sugestão -->
 
     <!-- Segundo NavBar do Site -->
 
     <nav id="nav2" class="navbar navbar-expand-lg navbar-light bg-light">
 
       <div class="container">
-      <a class="navbar-brand mt-1" href="#"><h5>HOME</h5></a>
+      <a class="navbar-brand " href="#"><h5 class="butao-home">HOME</h5></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -70,7 +118,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active mt-1 ml-3">
-            <a class="nav-link" href="#"><h5>OUTROS</h5></a>
+            <a class="nav-link" href="#"><h5 class="butao-outros">OUTROS</h5></a>
           </li>
           <li class="nav-item active mt-1 ml-3">
             <a class="nav-link" href="#"><h5>SOBRE</h5></a>
@@ -128,7 +176,7 @@
 
     <hr>
 
-    <h2 class="display 5">Hello, world!</h2>
+    <h4 class="titulo-principal-home">Livros em Destaque :</h4>
 
 
     <div class="card-columns">
@@ -136,16 +184,16 @@
         <div class="card mb-3" style="max-width: 400px;">
         <div class="row no-gutters">
           <div class="col-md-5">
-            <img src="https://sabrinaandrade.files.wordpress.com/2015/04/cronicas_narnia.jpg?w=584" class="card-img" alt="...">
+            <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/Imgs-books/A%20Sutil%20Arte%20de%20Ligar%20o%20Foda-se%20-%20Mark%20Manson.jpg" class="card-img" alt="...">
           </div>
           <div class="col-md-7">
             <div class="card-body">
-              <h6 class="card-title">Crônicas de Narnia</h6>
-              <p class="card-text">Autor: Clive Staples Lewis</p>
-              <p class="card-text"><small class="text-muted">Gênero: Fantasia, Aventura</small></p>
-              <p class="card-text"><small class="text-muted">Data de Publicação: 1956</small></p>
-              <button type="button" class="btn btn-outline-success btn-sm"> Ler Agora</button>
-              <button type="button" class="btn btn-outline-warning btn-sm"> Download</button>
+              <h6 class="card-title paragrafo-titulo">Crônicas de Narnia.</h6>
+              <p class="paragrafo-autor">Clive Staples Lewis</p>
+              <p class="paragrafo-genero"><small>Fantasia, Aventura</small></p>
+              <p class="paragrafo-data"><small class="text-muted">Data de Publicação 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm button-card"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm button-card"> Download</button>
             </div>
           </div>
         </div>
@@ -153,14 +201,17 @@
 
       <div class="card mb-3" style="max-width: 400px;">
         <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
+          <div class="col-md-5">
+            <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/Imgs-books/A%20Sutil%20Arte%20de%20Ligar%20o%20Foda-se%20-%20Mark%20Manson.jpg" class="card-img" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h6 class="card-title paragrafo-titulo">Crônicas de Narnia.</h6>
+              <p class="paragrafo-autor">Clive Staples Lewis</p>
+              <p class="paragrafo-genero"><small>Fantasia, Aventura</small></p>
+              <p class="paragrafo-data"><small class="text-muted">Data de Publicação 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm button-card"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm button-card"> Download</button>
             </div>
           </div>
         </div>
@@ -168,14 +219,17 @@
 
       <div class="card mb-3" style="max-width: 400px;">
         <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
+          <div class="col-md-5">
+            <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/Imgs-books/A%20Sutil%20Arte%20de%20Ligar%20o%20Foda-se%20-%20Mark%20Manson.jpg" class="card-img" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h6 class="card-title paragrafo-titulo">Crônicas de Narnia.</h6>
+              <p class="paragrafo-autor">Clive Staples Lewis</p>
+              <p class="paragrafo-genero"><small>Fantasia, Aventura</small></p>
+              <p class="paragrafo-data"><small class="text-muted">Data de Publicação 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm button-card"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm button-card"> Download</button>
             </div>
           </div>
         </div>
@@ -183,14 +237,17 @@
 
       <div class="card mb-3" style="max-width: 400px;">
         <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
+          <div class="col-md-5">
+            <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/Imgs-books/A%20Sutil%20Arte%20de%20Ligar%20o%20Foda-se%20-%20Mark%20Manson.jpg" class="card-img" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h6 class="card-title paragrafo-titulo">Crônicas de Narnia.</h6>
+              <p class="paragrafo-autor">Clive Staples Lewis</p>
+              <p class="paragrafo-genero"><small>Fantasia, Aventura</small></p>
+              <p class="paragrafo-data"><small class="text-muted">Data de Publicação 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm button-card"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm button-card"> Download</button>
             </div>
           </div>
         </div>
@@ -198,14 +255,17 @@
 
       <div class="card mb-3" style="max-width: 400px;">
         <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
+          <div class="col-md-5">
+            <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/Imgs-books/A%20Sutil%20Arte%20de%20Ligar%20o%20Foda-se%20-%20Mark%20Manson.jpg" class="card-img" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h6 class="card-title paragrafo-titulo">Crônicas de Narnia.</h6>
+              <p class="paragrafo-autor">Clive Staples Lewis</p>
+              <p class="paragrafo-genero"><small>Fantasia, Aventura</small></p>
+              <p class="paragrafo-data"><small class="text-muted">Data de Publicação 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm button-card"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm button-card"> Download</button>
             </div>
           </div>
         </div>
@@ -213,18 +273,22 @@
 
       <div class="card mb-3" style="max-width: 400px;">
         <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="..." class="card-img" alt="...">
+          <div class="col-md-5">
+            <img src="https://rb-br.github.io/API-Imagens.github.io/Site-Books-Hard/diversos/Imgs-books/A%20Sutil%20Arte%20de%20Ligar%20o%20Foda-se%20-%20Mark%20Manson.jpg" class="card-img" alt="...">
           </div>
-          <div class="col-md-8">
+          <div class="col-md-7">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <h6 class="card-title paragrafo-titulo">Crônicas de Narnia.</h6>
+              <p class="paragrafo-autor">Clive Staples Lewis</p>
+              <p class="paragrafo-genero"><small>Fantasia, Aventura</small></p>
+              <p class="paragrafo-data"><small class="text-muted">Data de Publicação 1956</small></p>
+              <button type="button" class="btn btn-outline-success btn-sm button-card"> Ler Agora</button>
+              <button type="button" class="btn btn-outline-warning btn-sm button-card"> Download</button>
             </div>
           </div>
         </div>
       </div>
+
        
 
 
@@ -248,7 +312,7 @@
       Por outro lado, a crescente influência da mídia nos obriga à análise do sistema de participação geral. Acima de tudo, é fundamental ressaltar que o comprometimento entre as equipes possibilita uma melhor visão global do levantamento das variáveis envolvidas. A prática cotidiana prova que o consenso sobre a necessidade de qualificação auxilia a preparação e a composição do orçamento setorial. Pensando mais a longo prazo, a percepção das dificuldades estimula a padronização do impacto na agilidade decisória.
       
     </p>
-    <button type="button" class="btn btn-outline-primary">Primary</button>
+
 
 
 
