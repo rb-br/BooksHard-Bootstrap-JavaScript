@@ -1,9 +1,26 @@
+<!-- ################################################################################################################################
+    #################################################################################################################################
+
+    ESTE PROJETO FOI CRIADO E DESENVOLVIDO POR RENATO BANDEIRA E ANGELICA BRITO, AMBOS AMIGOS DO CURSO DE ANALISE E DESENVOLVIMENTO DE 
+    SISTEMAS DA FACULDADE EVOLUCAO, DO SEMESTRE 2020.1, DA CADEIRA DE PROGRAMAÇÃO WEB2 - FRAMEWORD UTILIZADO BOOTSTRAP.
+
+    ________________________________________________________________________________________________________________________________
+
+
+    ESTE PROJETO CHAMADO "BOOKS HARD" ESTÁ CONSUMINDO A API PÚBLICA DE LIVROS DO GOOGLE E LIVROS SECUNDARIOS DA INTERNET.
+
+    ################################################################################################################################
+    ################################################################################################################################# -->
+
 <!doctype html>
 <html lang="pt-br">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon do Site -->
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,25 +43,25 @@
       <ul class="nav justify-content-end">
         <div class="github">
         <li class="nav-item">
-          <a class="nav-link active" href="#"><img src="imgs/github.png" alt="" title="GitHub"></a>
+          <a class="nav-link active" href="https://github.com/rb-br/BooksHard-Bootstrap-JavaScript" target="_blank"><img src="imgs/github.png" alt="" title="GitHub"></a>
         </li>
         </div>
         <div class="facebook">
         <li class="nav-item">
-          <a class="nav-link active" href="#"><img src="imgs/facebook.png" alt="" title="Facebook"></a>
+          <a class="nav-link active" href="https://www.facebook.com/" target="_blank"><img src="imgs/facebook.png" alt="" title="Facebook"></a>
         </li>
         </div>
         <div class="twitter">
         <li class="nav-item">
-          <a class="nav-link" href="#"><img src="imgs/twitter.png" alt="" title="Twitter"></a>
+          <a class="nav-link" href="https://twitter.com/" target="_blank"><img src="imgs/twitter.png" alt="" title="Twitter"></a>
         </li>
         </div>
         <div class="instagram">
         <li class="nav-item">
-          <a class="nav-link" href="#"><img src="imgs/instagram.png" alt="" title="Instagram"></a>
+          <a class="nav-link" href="https://www.instagram.com/" target="_blank"><img src="imgs/instagram.png" alt="" title="Instagram"></a>
         </li>
         </div>
-        <div class="sugestao" data-toggle="modal" data-target=".bd-example-modal-xl">
+        <div class="sugestao" data-toggle="modal" data-target=".bd-sugestao-modal-xl">
         <li class="nav-item">
           <a class="nav-link" href="#"><img src="imgs/sugestao.png" alt="" title="Sugestao | Suporte" ></a>
         </li>
@@ -56,7 +73,7 @@
 
     <!-- Modal do Navbar Direito | Botao Sugestão -->    
 
-<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-sugestao-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       
@@ -78,11 +95,11 @@
         <form>
           <div class="form-group">
             <label for="recipient-name" class="col-form-label"> <h6>Nome do Livro :</h6> </label>
-            <input type="text" class="form-control" id="recipient-name" placeholder="Insira o Nome do Livro...">
+            <input type="text" class="form-control" id="recipient-name" placeholder="Insira o Nome do Livro..." required>
           </div>
           <div class="form-group">
             <label for="message-text" class="col-form-label"> <h6>Descrição do Livro | Autor | Gênero :</h6></label>
-            <textarea class="form-control" id="message-text" placeholder="Descreva aqui informações sobre o(s) Livro(s) que você está sugerindo... " style="height: 130px;"></textarea>
+            <textarea class="form-control" id="message-text" placeholder="Descreva aqui informações sobre o(s) Livro(s) que você está sugerindo... " style="height: 130px;" required></textarea>
           </div>
 
           <div class="text-right justify-content-end" style="margin-top: 30px;">
@@ -111,14 +128,27 @@
 
       <div class="container">
       <a class="navbar-brand " href="#"><h5 class="butao-home">HOME</h5></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSiteBooksHard" aria-controls="navbarSiteBooksHard" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSiteBooksHard">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active mt-1 ml-3">
-            <a class="nav-link" href="#"><h5 class="butao-outros">OUTROS</h5></a>
+          
+          <li class="nav-item dropdown mt-1 pt-2 ml-3">
+            
+            <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <h5 class="butao-categorias"> Categorias </h5>
+            </a>
+            <div class="dropdown-menu mt-2">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+          </div>
           </li>
           <li class="nav-item active mt-1 ml-3">
             <a class="nav-link" href="#"><h5>SOBRE</h5></a>
